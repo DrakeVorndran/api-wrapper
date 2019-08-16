@@ -1,4 +1,4 @@
-const getCleanWeather = require('../index')
+const getCleanWeather = require('../src/index')
 
 test("sanity check", () => {
   //should pass

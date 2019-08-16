@@ -1,10 +1,12 @@
 {
-  "name": "api-wrapper",
+  "name": "gyration_crustacean_clean_weather",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "umd/index.js",
+  "module": "esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "rollup --config",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,11 +21,16 @@
   "devDependencies": {
     "jest": "^24.8.0",
     "rollup": "^1.19.4",
+    "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-typescript2": "^0.22.1",
     "typescript": "^3.5.3"
   },
   "dependencies": {
     "request": "^2.88.0",
     "request-promise-native": "^1.0.7"
-  }
+  },
+  "files": [
+    "esm/*",
+    "emd/*"
+  ]
 }
